@@ -65,7 +65,7 @@ Armazena as anotações clínicas vinculadas a um usuário.
 ### 5.1. Instalação das Dependências
 Abra o terminal na pasta do projeto e execute:
 pip install -r requirements.txt
-# Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt
+_Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt_
 
 ### 5.2. Download da LLM .guff
 Devido ao tamanho do arquivo, o modelo de IA não está hospedado neste repositório.
