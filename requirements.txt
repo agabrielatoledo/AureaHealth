@@ -1,0 +1,9 @@
+flask
+langchain
+langchain-community
+chromadb
+sentence-transformers
+llama-cpp-python
+pypdf
+unstructured
+requests
