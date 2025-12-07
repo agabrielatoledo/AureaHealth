@@ -66,7 +66,7 @@ Armazena as anotações clínicas vinculadas a um usuário.
 Abra o terminal na pasta do projeto e execute:
 ```bash
 pip install -r requirements.txt
-# Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt
+# Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt```
 
 ### 5.2. Download da LLM .guff
 Devido ao tamanho do arquivo, o modelo de IA não está hospedado neste repositório.
