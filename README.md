@@ -1,6 +1,6 @@
-# 🫀 CardioBot - Assistente Inteligente de Cuidados Pré e Pós-Operatórios
-## Autora: Gabriela Toledo 
-Trabalho Final da disciplina de **Tópicos Especiais em Programação III (2025/2)** do curso de **Informática Biomédica (UFCSPA)**.
+## 🫀 AuraHealth - Assistente Inteligente de Cuidados Pré e Pós-Operatórios
+Trabalho Final da disciplina de **Tópicos Especiais em Programação III (2025/2)** do curso de **Informática Biomédica (UFCSPA)**
+Desenvolvedora: Gabriela Toledo
 
 
 ## 1. Visão Geral do Projeto
