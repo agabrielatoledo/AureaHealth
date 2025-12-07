@@ -12,7 +12,6 @@ O **CardioBot** é uma aplicação web Full Stack desenvolvida para auxiliar pac
 3.  **Orientação Climática (API Externa):** Monitoramento em tempo real da temperatura local para prevenção de riscos cardiovasculares associados ao frio/calor extremos.
 4.  **Sistema de Login:** Controle de acesso para garantir que cada paciente veja apenas os seus próprios dados.
 
----
 
 ## 2. Arquitetura Técnica
 
@@ -25,15 +24,15 @@ O projeto segue uma arquitetura **MVC (Model-View-Controller)** adaptada para mi
     * **Vetorial:** ChromaDB (Indexação semântica da base de conhecimento RAG).
 * **LLM:** Llama 3 (8B Parameters) rodando localmente via `llama-cpp-python`.
 
----
 
 ## 3. Banco de Dados
 
 O sistema utiliza **SQLite**. Com a implementação do login, o banco foi estruturado em duas tabelas relacionadas:
 
-### Tabela: `usuarios`
+### Tabela: usuários
 Armazena as credenciais de acesso.
 | Campo   | Tipo   | Descrição                          |
+| :------ | :----- | :--------------------------------- |
 | `email` | `TEXT` | Chave Primária (PK). Identificador único. |
 | `senha` | `TEXT` | Senha de acesso.                   |
 | `nome`  | `TEXT` | Nome de exibição do paciente.      |
@@ -41,22 +40,21 @@ Armazena as credenciais de acesso.
 ### Tabela: `diario`
 Armazena as anotações clínicas vinculadas a um usuário.
 | Campo      | Tipo       | Descrição                                      |
+| :--------- | :--------- | :--------------------------------------------- |
 | `id`       | `INTEGER`  | Chave Primária (PK), Auto-incremento.          |
 | `texto`    | `TEXT`     | Conteúdo da anotação/sintoma.                  |
 | `paciente` | `TEXT`     | Chave Estrangeira (Vincula ao `email` do usuário). |
 | `data`     | `DATETIME` | Carimbo de tempo automático.                   |
 
----
-
 ## 4. Usuários de Teste 
 
 2 perfis pré configurados para validar senha e isolamento das notas do CRUD
 
-| Perfil         | E-mail (Login)     | Senha  | Cenário de Teste |
-| **Paciente 1** | `joao@cardio.com`  | `1234` | Pós-operatório recente. |
+| Perfil | E-mail (Login) | Senha | Cenário de Teste |
+| :--- | :--- | :--- | :--- |
+| **Paciente 1** | `joao@cardio.com` | `1234` | Pós-operatório recente. |
 | **Paciente 2** | `maria@cardio.com` | `1234` | Pré-operatório. |
 
----
 
 ## 5. Como Executar
 
@@ -69,3 +67,13 @@ Abra o terminal na pasta do projeto e execute:
 ```bash
 pip install -r requirements.txt
 # Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt
+
+### 5.2. Download da LLM .guff
+Devido ao tamanho do arquivo, o modelo de IA não está hospedado neste repositório.
+Acesse o link do drive onde está o arquivo, baixe para a pasta "models" dentro de DevWeb
+
+### 5.3. Iniciar o servidor
+Rode no terminadl: python3 backend.py
+Acesse o link exibido, ou : http://127.0.0.1:5000
+
+
