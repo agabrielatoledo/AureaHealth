@@ -37,7 +37,7 @@ Armazena as credenciais de acesso.
 | `senha` | `TEXT` | Senha de acesso.                   |
 | `nome`  | `TEXT` | Nome de exibição do paciente.      |
 
-### Tabela: `diario`
+### Tabela: diario
 Armazena as anotações clínicas vinculadas a um usuário.
 | Campo      | Tipo       | Descrição                                      |
 | :--------- | :--------- | :--------------------------------------------- |
@@ -64,13 +64,13 @@ Armazena as anotações clínicas vinculadas a um usuário.
 
 ### 5.1. Instalação das Dependências
 Abra o terminal na pasta do projeto e execute:
-```bash
 pip install -r requirements.txt
-# Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt```
+# Para usuários de Mac/Linux, utilize: pip3 install -r requirements.txt
 
 ### 5.2. Download da LLM .guff
 Devido ao tamanho do arquivo, o modelo de IA não está hospedado neste repositório.
 Acesse o link do drive onde está o arquivo, baixe para a pasta "models" dentro de DevWeb
+https://drive.google.com/file/d/154Idwudi41Cyr5qnuqgyFB5lEBDFRgkX/view?usp=drive_link
 
 ### 5.3. Iniciar o servidor
 Rode no terminadl: python3 backend.py
